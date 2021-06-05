@@ -1,0 +1,158 @@
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Indie+Flower|Pacifico&display=swap" rel="stylesheet">
+
+<title>Kalkulator</title>
+<link rel="icon" type="img/png" href="img/logo1.png">
+<script>
+function insert(num){
+document.form.textview.value = document.form.textview.value+num
+}
+function equal(){
+var exp = document.form.textview.value
+if(exp){
+document.form.textview.value = eval(exp)
+}
+}
+function clean(){
+document.form.textview.value = ""
+}
+function back(){
+var exp = document.form.textview.value
+document.form.textview.value = exp.substring(0,exp.length-1)
+}
+</script>
+<style>
+*{
+margin: 0;
+padding: 0;
+}
+.button{
+width: 50;
+height: 50;
+font-size: 25;
+margin: 2;
+cursor: pointer;
+background: #607d8b;
+border: none;
+}
+.textview{
+width: 213px;
+margin-bottom: 5px;
+margin-left: 3px;
+font-size: 25;
+padding: 5;
+border: none;
+color: #607d8b;
+}
+.main{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+}
+
+body{
+background: linear-gradient(to right, #e91e63, #3f51b5)
+}
+
+
+.top-bar img{
+	margin-top: 4px;
+	border-radius: 50%;
+	height: 45px;
+	float: left; 
+
+}
+.top-bar p{
+  font-family: 'Pacifico', cursive;
+	color: salmon;
+	font-size: 18px;
+	margin-top: 0; 
+  font-style: italic;
+}
+
+nav a, nav button{
+  font-family: 'Pacifico', cursive;
+}
+</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="top-bar"><img src="img/logo1.png"><p>Tolak Desain Murah</p></div>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#about"><span class="sr-only">(current)</span></a>
+                </li>
+       	     </ul>
+                 <div class="btn-group">
+              <button type="button" class="btn btn-danger">Tentang Kami</button>
+              <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="index.html">Home</a>
+                <a class="dropdown-item" href="About.html">About</a>
+                <a class="dropdown-item" href="kelompok.html" target="_blank">Kelompok 5</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://instagram.com/lie_ddaniel" target="_blank">My IG</a>
+              </div>
+            </div>
+      </div>
+    </nav> 
+
+
+<div class="bg"></div>
+<div class="main">
+<form name="form">
+<input class="textview" name="textview" placeholder="0">
+</form>
+<table>
+<tr>
+<td><input class ="button" type="button" value="C" onclick="clean()"></td>
+<td><input class ="button" type="button" value="<" onclick="back()"></td>
+<td><input class ="button" type="button" value="/" onclick="insert('/')"></td>
+<td><input class ="button" type="button" value="X" onclick="insert('*')"></td>
+</tr>
+<tr>
+<td><input class ="button" type="button" value="7" onclick="insert(7)"></td>
+<td><input class ="button" type="button" value="8" onclick="insert(8)"></td>
+<td><input class ="button" type="button" value="9" onclick="insert(9)"></td>
+<td><input class ="button" type="button" value="-" onclick="insert('-')"></td>
+</tr>
+<tr>
+<td><input class ="button" type="button" value="4" onclick="insert(4)"></td>
+<td><input class ="button" type="button" value="5" onclick="insert(5)"></td>
+<td><input class ="button" type="button" value="6" onclick="insert(6)"></td>
+<td><input class ="button" type="button" value="+" onclick="insert('+')"></td>
+</tr>
+<tr>
+<td><input class ="button" type="button" value="1" onclick="insert(1)"></td>
+<td><input class ="button" type="button" value="2" onclick="insert(2)"></td>
+<td><input class ="button" type="button" value="3" onclick="insert(3)"></td>
+<td rowspan=5><input class ="button" style="height:106" type="button" value="=" onclick="equal()"></td>
+</tr>
+<tr>
+<td colspan=2><input class ="button" style="width:106" type="button" value="0" onclick="insert(0)"></td>
+<td><input class ="button" type="button" value="." onclick="insert('.')"></td>
+</tr>
+</table>
+</div>
+
+<script src="jquery-3.4.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

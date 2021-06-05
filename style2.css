@@ -1,0 +1,203 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*style*/
+
+html {
+	position: relative;
+}
+
+body {
+	font: 16px/28px arial, sans-serif;
+	background-image: url(img/bg1.png);
+	color: #333;
+}
+
+.tombol{
+	font-family: 'Pacifico', cursive;
+	float: right;
+	padding-top: 2px;
+}
+
+.top-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 45px;
+	background-color: #283655;
+	border-bottom: 3px solid white;
+	z-index: 9999;
+}
+
+.top-bar img{
+	margin-top: 6px;
+	border-radius: 50%;
+	height: 30px;
+	float: left; 
+
+}
+.top-bar p{
+	color: #FDEFEA;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 3px; 
+	font-weight: bold;
+	font-family: orator std;
+	font-style: italic;
+	float: left;
+}
+
+h2{
+	font-family: 'Pacifico', cursive;
+	color: #1E1F26;
+	font-weight: bold;
+	font-size: 40px;
+	text-shadow: 3px 3px 1.5px white;
+}
+
+.about{
+	padding-top: 60px;
+	padding-bottom: 20px;
+	background-color: rgb(240, 248, 254, 0.3);
+	box-shadow: 0 0 3px 3px rgb(192, 192, 192);
+
+}
+
+.about p{
+	font-family: orator std;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	/*color: #1E1F26;*/
+}
+
+
+.portfolio{
+	padding-bottom: 20px;
+	padding-top: 5px;
+	background-color: rgb(240, 248, 254, 0.3);
+	box-shadow: 0 0 3px 3px rgb(192, 192, 192);
+}
+
+#pad{
+	padding-top: 20px;
+}
+
+ hr {
+	width: 200px;
+	border-top: 3px solid gray;
+	margin-top: 6.5px;
+}
+
+footer {
+	position: relative;
+	padding-bottom: 0;
+	width: 100%;
+	background-color: #333;
+	padding-top: 10px;
+	
+}
+
+
+
+#lo a {
+	color: #fff;
+	font-size: 0.9em;
+}
+
+#copy {
+	color: #fff;
+	font-size: 0.9em;
+}
+
+
+.love {
+	font-size: 15px;
+}
+
+.tengah{
+	width: 440px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#nama{
+	margin-left: 0;
+	float: left;
+}
+
+#nim {
+	margin-left: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+

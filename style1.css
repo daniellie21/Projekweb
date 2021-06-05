@@ -1,0 +1,104 @@
+
+html {
+	position: relative;
+}
+
+h2{
+	font-family: 'Pacifico', cursive;
+}
+
+body{
+	margin-top: 25px;
+}
+
+.jumbotron img {
+	width: 200px;
+	border: 5px solid #666;
+	
+}
+
+ hr {
+	width: 200px;
+	border-top: 3px solid #999;
+	margin-top: -5px;
+}
+
+.jumbotron{
+	padding-bottom: 20px;
+}
+
+.jumbotron p {
+	font-weight: bold;
+}
+
+.about{
+	padding-top: 5px;
+	padding-bottom: 20px;
+	margin-top: -30px;
+}
+
+.about p{
+	font-family: 'Indie Flower', cursive;
+}
+
+
+.portfolio{
+	background-color: #eee;
+	padding-bottom: 20px;
+	padding-top: 5px;
+}
+
+.contact{
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+
+label{
+	font-weight: bold;
+}
+
+.tombol {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+nav {
+	position: absolute;
+	width: 100%;
+}
+
+footer {
+	width: 100%;
+	background-color: #333;
+	padding-top: 10px;
+	
+}
+
+
+
+#lo a {
+	color: #fff;
+	font-size: 0.9em;
+	margin-top: -25PX;
+}
+
+#copy {
+	color: #fff;
+	font-size: 0.9em;
+}
+
+
+.love {
+	font-size: 15px;
+}
+
+
+#just{
+	font-size: 20px;
+	text-align: justify;
+}
+
+nav a, nav button{
+	font-family: 'Pacifico', cursive;
+}
+
